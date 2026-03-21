@@ -14,6 +14,7 @@ A terminal-style browser extension that replaces your new tab page with a comman
 - 🎨 **Customizable Appearance** - Change colors, background, and blur effects
 - 🔍 **Search Integration** - Direct Google search from the terminal
 - 📖 **Browser History** - Access your browsing history from the terminal
+- 🕒 **Time & Clock Tools** - Time commands and a draggable clock UI
 
 ## Installation
 
@@ -28,17 +29,14 @@ A terminal-style browser extension that replaces your new tab page with a comman
    Or download the ZIP file from GitHub and extract it.
 
 2. **Open Chrome/Edge Extensions Page**
-
    - Chrome: Navigate to `chrome://extensions/`
    - Edge: Navigate to `edge://extensions/`
    - Or click the three dots menu → Extensions → Manage Extensions
 
 3. **Enable Developer Mode**
-
    - Toggle the "Developer mode" switch in the top right corner
 
 4. **Load the extension**
-
    - Click "Load unpacked"
    - Select the folder where you extracted/cloned the extension
    - The CLI Browser Extension should now appear in your extensions list
@@ -61,23 +59,34 @@ A terminal-style browser extension that replaces your new tab page with a comman
 | `<url>`          | Navigate to URL (auto-detects URLs)           |
 | `<text>`         | Search Google for text                        |
 
+### Time & Clock Commands
+
+| Command     | Description                                     |
+| ----------- | ----------------------------------------------- |
+| `time`      | Show current time (24-hour format)              |
+| `time 24`   | Show time in 24-hour format                     |
+| `time 12`   | Show time in 12-hour format                     |
+| `time full` | Show full details with date and timezone        |
+| `time live` | Show a live ticking time (press Ctrl+C to exit) |
+| `time ui`   | Open a draggable clock UI with selectable faces |
+
 ### Directory Navigation
 
-| Command             | Description                                        |
-| ------------------- | -------------------------------------------------- |
-| `cd fav`            | List all favorites                                 |
-| `cd fav <index>`    | Open favorite by index number                      |
-| `cd fav <name>`     | Open favorite by name (searches title)             |
-| `cd bm`             | List all custom bookmarks                          |
-| `cd bm <folder>`    | List bookmarks in a specific folder                |
-| `cd bm <path>`      | List bookmarks in nested folder (use folder1/sub1) |
-| `cd bm <index>`     | Open bookmark by index number                      |
-| `cd bm <name>`      | Open bookmark by name                              |
-| `cd notes`          | List all notes                                     |
-| `cd flow <id>`      | List all URLs in a flow                            |
-| `cd history`        | List browsing history (page 1)                     |
-| `cd history <page>` | List browsing history (specific page)              |
-| `cd ..`             | Go up to parent directory                          |
+| Command               | Description                                        |
+| --------------------- | -------------------------------------------------- |
+| `cd fav`              | List all favorites                                 |
+| `cd fav <index>`      | Open favorite by index number                      |
+| `cd fav <name>`       | Open favorite by name (searches title)             |
+| `cd bm`               | List all custom bookmarks                          |
+| `cd bm <folder>`      | List bookmarks in a specific folder                |
+| `cd bm <path>`        | List bookmarks in nested folder (use folder1/sub1) |
+| `cd bm <index>`       | Open bookmark by index number                      |
+| `cd bm <name>`        | Open bookmark by name                              |
+| `cd notes`            | List all notes                                     |
+| `cd flow <id>`        | List all URLs in a flow                            |
+| `show history`        | Show last 10 browsing history entries              |
+| `show history <page>` | Show history page (1=1-10, 2=11-20, etc.)          |
+| `cd ..`               | Go up to parent directory                          |
 
 ### Bookmark Management
 
@@ -201,6 +210,12 @@ Open settings by typing `open settings` in the terminal to customize:
 - **Background Color** - Change the terminal background color
 - **Background Image** - Set a custom background image (URL)
 
+Clock UI (opened via `time ui`):
+
+- Choose between multiple faces (e.g., LCD Green/Red, Pixel, Matrix, Analog)
+- Drag to reposition; position and face are remembered across sessions
+- Use the gear icon in the clock to switch faces
+
 ## Tips
 
 1. **Quick Search**: Just type any text and press Enter to search Google
@@ -208,10 +223,58 @@ Open settings by typing `open settings` in the terminal to customize:
 3. **Command History**: Use Up/Down arrow keys to navigate through previous commands
 4. **Tab Completion**: Use Tab key for auto-completion (coming soon)
 5. **Nested Bookmarks**: Organize bookmarks in folders like `work/projects/web`
+6. **Live Time**: Use `time live` and press Ctrl+C to stop
 
-## Contributing
+# Contributors 🌟
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+Thank you to all the amazing people who have contributed to CLI Browser!
+
+<div align="center">
+
+<a href="https://github.com/v-aibha-v-jain" target="_blank">
+  <img
+    src="https://github.com/v-aibha-v-jain.png"
+    alt="v-aibha-v-jain's GitHub Profile"
+    width="100"
+    style="border-radius: 50%; max-width: 100%; height: auto; display: inline-block; margin: 0 5px;"
+  />
+</a>
+<a href="https://github.com/keikurono7" target="_blank">
+  <img
+    src="https://github.com/keikurono7.png"
+    alt="keikurono7's GitHub Profile"
+    width="100"
+    style="border-radius: 50%; max-width: 100%; height: auto; display: inline-block; margin: 0 5px;"
+  />
+</a>
+<a href="https://github.com/vamsi-op" target="_blank">
+  <img
+    src="https://github.com/vamsi-op.png"
+    alt="vamsi-op's GitHub Profile"
+    width="100"
+    style="border-radius: 50%; max-width: 100%; height: auto; display: inline-block; margin: 0 5px;"
+  />
+</a>
+<a href="https://github.com/rafia-codes" target="_blank">
+  <img
+    src="https://github.com/rafia-codes.png"
+    alt="rafia-codes's GitHub Profile"
+    width="100"
+    style="border-radius: 50%; max-width: 100%; height: auto; display: inline-block; margin: 0 5px;"
+  />
+</a>
+<a href="https://github.com/tusharv" target="_blank">
+  <img
+    src="https://github.com/tusharv.png"
+    alt="tusharv's GitHub Profile"
+    width="100"
+    style="border-radius: 50%; max-width: 100%; height: auto; display: inline-block; margin: 0 5px;"
+  />
+</a>
+
+</div>
 
 ## License
 

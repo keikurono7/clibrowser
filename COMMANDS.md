@@ -33,30 +33,30 @@ See the README for full details and troubleshooting.
 
 ### Navigation
 
-| Command             | Description                                    |
-| ------------------- | ---------------------------------------------- |
-| `cd fav`            | List all favorites                             |
-| `cd fav <index>`    | Open favorite by index number                  |
-| `cd fav <name>`     | Open favorite by name (searches title)         |
-| `cd bm`             | List all custom bookmarks                      |
-| `cd bm <folder>`    | List bookmarks in a specific folder            |
-| `cd bm <path>`      | List bookmarks in nested folder (folder1/sub1) |
-| `cd bm <index>`     | Open bookmark by index number                  |
-| `cd bm <name>`      | Open bookmark by name                          |
-| `cd notes`          | List all notes                                 |
-| `cd flow <id>`      | List all URLs in a flow                        |
-| `cd history`        | List browsing history (page 1)                 |
-| `cd history <page>` | List browsing history (specific page)          |
-| `cd ..`             | Go up to parent directory                      |
+| Command               | Description                                    |
+| --------------------- | ---------------------------------------------- |
+| `cd fav`              | List all favorites                             |
+| `cd fav <index>`      | Open favorite by index number                  |
+| `cd fav <name>`       | Open favorite by name (searches title)         |
+| `cd bm`               | List all custom bookmarks                      |
+| `cd bm <folder>`      | List bookmarks in a specific folder            |
+| `cd bm <path>`        | List bookmarks in nested folder (folder1/sub1) |
+| `cd bm <index>`       | Open bookmark by index number                  |
+| `cd bm <name>`        | Open bookmark by name                          |
+| `cd notes`            | List all notes                                 |
+| `cd flow <id>`        | List all URLs in a flow                        |
+| `show history`        | Show last 10 browsing history entries          |
+| `show history <page>` | Show history page (1=1-10, 2=11-20, etc.)      |
+| `cd ..`               | Go up to parent directory                      |
 
 ### Bookmarks
 
-| Command                         | Description                                   |
-| ------------------------------- | --------------------------------------------- |
-| `mkbm "name" "url"`             | Create bookmark at current location           |
-| `mkbm folder/path "name" "url"` | Create bookmark in nested path                |
-| `rmbm <name>`                   | Remove a bookmark                             |
-| `rmbm folder/path/name`         | Remove a bookmark from nested path            |
+| Command                         | Description                         |
+| ------------------------------- | ----------------------------------- |
+| `mkbm "name" "url"`             | Create bookmark at current location |
+| `mkbm folder/path "name" "url"` | Create bookmark in nested path      |
+| `rmbm <name>`                   | Remove a bookmark                   |
+| `rmbm folder/path/name`         | Remove a bookmark from nested path  |
 
 ### Favorites
 
@@ -81,6 +81,15 @@ See the README for full details and troubleshooting.
 | `create flow <id>` | Create a new flow (enter URLs, 'exit' to finish) |
 | `delete flow <id>` | Delete a flow                                    |
 | `--flow <id>`      | Open all URLs in a flow in new tabs              |
+
+### Sessions
+
+| Command               | Description                               |
+| --------------------- | ----------------------------------------- |
+| `save session <id>`   | Save all tabs from current browser window |
+| `load session <id>`   | Restore all tabs from a saved session     |
+| `list sessions`       | List all saved sessions                   |
+| `delete session <id>` | Delete a saved session                    |
 
 ---
 
